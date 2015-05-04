@@ -1,0 +1,817 @@
+/*! HTML5 Boilerplate v4.3.0 | MIT License | http://h5bp.com/ */
+
+html,
+button,
+input,
+select,
+textarea {
+    color: #222;
+}
+
+html {
+    font-size: 1em;
+    line-height: 1.4;
+}
+
+::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+audio,
+canvas,
+img,
+video {
+    vertical-align: middle;
+}
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+textarea {
+    resize: vertical;
+}
+
+.browsehappy {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
+
+
+
+/* ==========================================================================
+   GERAL THINGS
+   ========================================================================== */
+
+body:before{
+    display:none;
+    content: url(../img/fakefake.JPG) url(../img/lunch.JPG) url(../img/happy.JPG);
+}
+
+#content{
+    position: absolute;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+}
+.container {
+    width: 960px;
+    height: auto;
+    margin: 0px auto;
+}
+
+.divider{
+    background-image: url(../img/kickstarterdot.png);
+    width: 174px;
+    height: 3px;
+    margin: -3px auto 27px;
+}
+
+a:link {
+    text-decoration: none;
+    color: #0f2105;
+}
+
+a:visited {
+    text-decoration: none;
+    color: #0f2105;
+}
+
+a:hover {
+    text-decoration: none;
+    color: #0f2105;
+}
+
+a:active {
+    text-decoration: none;
+    color: #0f2105;
+}
+
+
+
+
+
+.zindex{
+    position: absolute;
+    z-index: -10;
+    min-width: 100%; 
+    min-height: 100%; 
+    width: auto; 
+    height: auto;
+    overflow: auto;
+}
+
+#video600{
+    position: absolute;
+    min-width: 100%; 
+    min-height: 100%; 
+    width: auto; 
+    height: auto;
+    overflow: auto;
+    bottom: 0px; 
+    right: 0px; 
+
+}
+
+.hover{
+    text-decoration: underline;
+}
+
+/* ==========================================================================
+   SESSIONS
+   ========================================================================== */
+
+#video_start{
+    position: relative;
+    width: 100%;
+    height: 650px;
+    background: transparent;
+    color: #0f2105;
+    overflow: auto;
+}
+
+#allthetime{
+    position: relative;
+    min-height: 500px;
+    width: 100%;
+    background: #f7fafa;
+    display: inline-block;
+    color: #0f2105;
+}
+
+
+#aboutme{
+    position: relative;
+    min-height: 680px;
+    width: 100%;
+    display: inline-block;
+    color: #0f2105;
+}
+
+ul {
+    width: 960px;
+    height: 120px;
+    margin: 34px 0px 30px 0px;
+    vertical-align: middle;
+}
+
+
+#builder{
+    position: relative;
+    display: inline-block;
+    min-height: 96px;
+    width: 240px;
+    margin: 0px 0px 0px 150px;
+    float: left;
+    padding: 0px 20px;
+    text-align: center;
+    list-style: none;
+
+}
+
+#marketing{
+    position: relative;
+    display: inline-block;
+    min-height: 96px;
+    width: 240px;
+    padding: 0px 20px;
+    margin: 0px 200px 0px 0px;
+    text-align: center;
+    list-style: none;
+
+    
+}
+
+
+#hyperlogo{
+    background-image: url(../img/hyperlogo.png);
+    position: absolute;
+    height: 30px;
+    width: 30px;
+    left: 50%;
+    margin-left: -15px;
+
+}
+
+#meet_my_class{
+    position: absolute;
+    width: 700px;
+    height: 54px;
+    margin: 0px 130px 20px 130px;
+    text-align: center;
+    font-size: 14px;
+    font-family: 'Helvetica';
+    font-style: bold;
+    color: #0f2105;
+    
+}
+
+#link3{
+    text-decoration: underline;
+}
+
+#forever{
+    position: relative;
+    background-color: #0f2105;
+    min-height: 470px;
+    width: 100%;
+    color: white;
+    display: inline-block;
+}
+
+
+#nyiloveyou{
+    position: relative;
+    width: 100%;
+    min-height: 650px;
+    background-image: url(../img/manhattan.png);
+    background-position: center center;
+    background-size: cover;
+    display: inline-block;
+}
+
+#fun{
+    position: relative;
+    width: 100%;
+    min-height: 650px;
+    background-image: url(../img/fakefake.jpg);
+    background-position: center center;
+    background-size: cover;
+    overflow: auto;
+    color:#0f2105;
+    z-index: -100;
+    transition: all 1.0s ease;
+}
+
+
+#end{
+    position: relative;
+    width: 100%;
+    height: 300px;
+    overflow: hidden;
+    background-color: #f7fafa;
+}
+
+
+#internshipbox{
+    width: 200px;
+    height: 160px; 
+    margin: 0 auto;
+    vertical-align: middle;
+    padding: 20px 10px;
+    overflow: hidden;
+    background-color: white;
+}
+
+#heart{
+    width: 40px;
+    height: 40px;
+    margin: 30px auto;
+    background-image: url(../img/heart.png);
+}
+
+
+
+/* ==========================================================================
+   TEXT
+   ========================================================================== */
+
+
+.mega {
+    font-size: 60px;
+    line-height: 50px;
+    font-weight: normal;
+    font-family: "Helvetica Neue", Helvetica, Arial, "Liberation Sans", FreeSans, sans-serif;
+    text-align: center;
+    margin-top: 200px;
+    margin-bottom: 30px;
+    color: #0f2105;
+}
+
+.big_type{
+    font-size: 22px;
+    line-height: 1.3em;
+    font-weight: normal;
+    font-family: "Helvetica Neue", Helvetica, Arial, "Liberation Sans", FreeSans, sans-serif;
+    text-align: center;
+    margin: 0 0 0 70;
+    overflow: hidden;
+    color: #0f2105;
+}
+
+.normal {
+    font-size: 48px;
+    font-weight: 300;
+    line-height: 50px;
+    font-weight: normal;
+    font-family: "Helvetica Neue", Helvetica, Arial, "Liberation Sans", FreeSans, sans-serif;
+    text-align: center;
+    margin-top: 130px;
+    margin-bottom: 20px;
+
+
+}
+
+.h3 {
+    font-size: 22px;
+    line-height: 30px;
+    font-weight: normal;
+    font-family: "Helvetica Neue", Helvetica, Arial, "Liberation Sans", FreeSans, sans-serif;
+    text-align: center;
+    margin: 0px 80px 40px 80px;
+
+}
+
+.h3b {
+    font-size: 22px;
+    line-height: 30px;
+    font-weight: normal;
+    font-family: "Helvetica Neue", Helvetica, Arial, "Liberation Sans", FreeSans, sans-serif;
+    text-align: center;
+    margin: 0px 130px 40px 130px;
+    color: #0f2105;
+
+}
+
+.nytext_big{
+    position: static;
+    padding-right: 400px; 
+    font-size: 48px;
+    line-height: 50px;
+    font-weight: normal;
+    font-family: "Helvetica Neue", Helvetica, Arial, "Liberation Sans", FreeSans, sans-serif;
+    text-align: left;
+    margin-top: 130px;
+    margin-bottom: 20px;
+    color: white;
+
+}
+
+.nytext_normal{
+    position: static;
+    padding-right: 500px; 
+    font-size: 22px;
+    line-height: 30px;
+    font-weight: normal;
+    font-family: "Helvetica Neue", Helvetica, Arial, "Liberation Sans", FreeSans, sans-serif;
+    text-align: left;
+    color: white;
+
+}
+
+.funtext_big{
+    position: static;
+    padding-left: 600px; 
+    font-size: 48px;
+    line-height: 50px;
+    font-weight: normal;
+    font-family: "Helvetica Neue", Helvetica, Arial, "Liberation Sans", FreeSans, sans-serif;
+    text-align: left;
+    margin-top: 130px;
+    margin-bottom: 20px;
+    color: #0f2105;
+
+}
+
+.funtext_normal{
+    position: static;
+    padding-left: 600px; 
+    font-size: 22px;
+    line-height: 30px;
+    font-weight: normal;
+    font-family: "Helvetica Neue", Helvetica, Arial, "Liberation Sans", FreeSans, sans-serif;
+    text-align: left;
+    color:#0f2105;
+
+}
+
+#laughter{
+    position: absolute;
+    width: 200px;
+    height: 0px;
+    font-size: 14px;
+    line-height: 50px;
+    font-weight: normal;
+    font-family: "Helvetica Neue", Helvetica, Arial, "Liberation Sans", FreeSans, sans-serif;
+    color: white;
+    bottom: 60px;
+    left: 30px;
+    vertical-align: baseline
+
+}
+
+h2{
+    font-size: 32px;
+    font-weight: 300;
+    line-height: 50px;
+    font-weight: normal;
+    font-family: "Helvetica Neue", Helvetica, Arial, "Liberation Sans", FreeSans, sans-serif;
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 20px;
+}
+
+#position{
+    font-size: 16px;
+    font-weight: bold;
+    font-family: "Helvetica Neue", Helvetica, Arial, "Liberation Sans", FreeSans, sans-serif;
+    text-align: left;
+    color: #00a0ff;
+    margin: 0px 0px 15px 0px;
+    text-decoration: none;
+
+}
+
+#position_text{
+    font-size: 14px;
+    font-weight: normal;
+    font-family: "Helvetica Neue", Helvetica, Arial, "Liberation Sans", FreeSans, sans-serif;
+    text-align: left;
+    color: #0f2105;
+    margin: 0px 0px 15px 0px;
+    text-decoration: none;
+}
+
+
+
+#simple1{
+    font: 16px; 
+    font-weight: normal;
+    font-family: "Helvetica Neue", Helvetica, Arial, "Liberation Sans", FreeSans, sans-serif;
+    color: #0f2105;
+    margin: 0px auto;
+    text-align: center;
+
+
+}
+
+#simple2{
+    font: 16px; 
+    font-weight: normal;
+    font-family: "Helvetica Neue", Helvetica, Arial, "Liberation Sans", FreeSans, sans-serif;
+    color: #0f2105;
+    margin: 0px auto;
+    text-align: center;
+
+
+}
+
+
+#link1{
+    text-decoration: underline;
+
+}
+
+#link2{
+    text-decoration: underline;
+
+
+}
+
+.link-blue{
+    color: #00a0ff
+
+}
+
+
+
+
+
+
+
+
+
+/* ==========================================================================
+   Media Queries
+   ========================================================================== */
+
+@media screen and (max-width: 60em) {
+    .container {
+        width: 80%;
+    }
+
+    .h3 {
+        margin: 0 0 120px 0;
+    }
+
+    .h3b {
+        margin: 0 0 120px 0;
+    }
+
+    .h3c {
+        margin: 0 0 120px 0;
+    }
+    
+    #nyiloveyou{
+        background-position: center left;
+        padding-right: 0; 
+        text-align: center;
+
+    }
+
+    #fun{
+        overflow: none;
+        display: inline-block;
+        background-position: center left;
+        padding-right: 0; 
+        text-align: center;
+    }
+
+    .nytext_big{
+        padding-right: 0; 
+        text-align: center;
+
+
+    }
+
+    .nytext_normal{
+        padding-right: 0; 
+        text-align: center;
+
+    }
+
+    .funtext_big{
+        padding-left: 0; 
+        text-align: center;
+        color: white;
+       
+
+    }
+
+    .funtext_normal{
+        padding-left: 0; 
+        text-align: center;
+        color: white;
+
+    }
+
+    ul {
+        width: 80%;
+        min-height: 360px;
+        margin: 0 auto;
+        display: inline-block;
+    }
+
+    #builder{
+        width: 100%;
+        margin: 0px 0px 0px 0px;
+        padding: 10px 0px;
+        display: inline-block;
+    }
+
+    #marketing{
+        width: 100%;
+        padding: 10px 0px;
+        margin: 0px 0px 0px 0px;
+        display: inline-block;
+    }
+
+    #meet_my_class{
+        display: none;
+
+    }
+}
+
+@media screen and (max-width: 35em) {
+
+    .mega {
+        font-size: 40px;
+        line-height: normal;
+        text-align: left;
+        margin-top: 50px;
+
+}
+
+    .big_type{
+        font-size: 22px;
+        line-height: normal;
+        text-align: left;
+    }
+
+    .normal {
+        font-size: 36px;
+        line-height: normal;
+        font-weight: normal;
+        text-align: left;
+
+
+    }
+
+    .h3 {
+        font-size: 22px;
+        line-height: normal;
+        text-align: left;
+
+    }
+
+    .h3b {
+        font-size: 22px;
+        line-height: normal;
+        text-align: left;
+
+    }
+
+    .nytext_big{
+        font-size: 40px;
+        line-height: normal;
+        text-align: left;
+
+    }
+
+    .nytext_normal{
+        font-size: 22px;
+        line-height: normal;
+        text-align: left;
+
+    }
+
+    .funtext_big{
+        font-size: 40px;
+        line-height: normal;
+        text-align: left;
+
+    }
+
+    .funtext_normal{
+        font-size: 22px;
+        line-height: normal;
+        text-align: left;
+
+    }
+
+    #builder{
+    text-align: right;
+
+
+}
+
+    #marketing{
+    text-align: right;
+
+    
+}
+    .divider{
+    margin: -3px 5px 27px 0;
+}
+
+
+
+
+}
+
+@media print,
+       (-o-min-device-pixel-ratio: 5/4),
+       (-webkit-min-device-pixel-ratio: 1.25),
+       (min-resolution: 120dpi) {
+
+}
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+.ir {
+    background-color: transparent;
+    border: 0;
+    overflow: hidden;
+    *text-indent: -9999px;
+}
+
+.ir:before {
+    content: "";
+    display: block;
+    width: 0;
+    height: 150%;
+}
+
+.hidden {
+    display: none !important;
+    visibility: hidden;
+}
+
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+}
+
+.invisible {
+    visibility: hidden;
+}
+
+.clearfix:before,
+.clearfix:after {
+    content: " ";
+    display: table;
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+.clearfix {
+    *zoom: 1;
+}
+
+/* ==========================================================================
+   Print styles
+   ========================================================================== */
+
+@media print {
+    * {
+        background: transparent !important;
+        color: #000 !important;
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+
+    a,
+    a:visited {
+        text-decoration: underline;
+    }
+
+    a[href]:after {
+        content: " (" attr(href) ")";
+    }
+
+    abbr[title]:after {
+        content: " (" attr(title) ")";
+    }
+
+    .ir a:after,
+    a[href^="javascript:"]:after,
+    a[href^="#"]:after {
+        content: "";
+    }
+
+    pre,
+    blockquote {
+        border: 1px solid #999;
+        page-break-inside: avoid;
+    }
+
+    thead {
+        display: table-header-group;
+    }
+
+    tr,
+    img {
+        page-break-inside: avoid;
+    }
+
+    img {
+        max-width: 100% !important;
+    }
+
+    @page {
+        margin: 0.5cm;
+    }
+
+    p,
+    h2,
+    h3 {
+        orphans: 3;
+        widows: 3;
+    }
+
+    h2,
+    h3 {
+        page-break-after: avoid;
+    }
+}
